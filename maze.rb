@@ -15,7 +15,14 @@ while i < data.length
   all = false
   sum = data[i][1]
   while all == false
-    
+    while j < data.length
+      if sum + data[j][1] == target_price
+        p "yippy!"
+      else
+        p "oof"
+      end
+      j += 1
+    end
   end
   i += 1
 end
